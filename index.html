@@ -1,0 +1,553 @@
+<html lang="en">
+<head>
+  <title>Pizza website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="C:\Users\manju\Downloads\learning html\Bootstrap\style.css">
+	<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+</head>
+
+<!-- Beginning of body -->
+<body>
+
+
+<!-- first section start-->  
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="font-weight:bold; background-color: #E7272D;">
+  <a class="navbar-brand" href="#"><img src="C:\Users\manju\Downloads\learning html\Bootstrap\logo2.png" alt="logo" style="width:60px;"><span class="text-white" id="logotext">  DINERM4</span></a>
+  
+  <!-- toggler for navbar on resizing to smaller window-->
+
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto flex-nowrap">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="text-white">HOME</span> <span class="sr-only">(current)</span></a>
+      </li>
+      
+	  <!-- First Dropdown-->
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          LIVE DEMO
+        </a>
+		
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+	  
+	  <!-- First Dropdown-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          LIVE DEMO BLOCKS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+	
+	<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" id="buynow" type="submit" value="BUY NOW" style="background-color:white;">
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+    </form>
+	</div>
+</nav>	
+<div id = "firstsection" style="background-color: #E7272D;">
+<div class = "container">	
+	<!-- first content -->
+	<div class = "row">
+		<div class = "col">
+			<h3> HAPPY HOUR SPECIAL ____________</h3></br>
+			<h1><strong>PIZZA BAR</strong></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula.</p>
+		</div>
+		<div class = "col" style="background-color: #E7272D;">
+		<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:500px;">
+		</div>
+	</div>	
+
+</div><!--closing of first container -->	
+</div><!--closing of first section-->
+
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 10) {
+	    $(".navbar").css("background" , "black");
+	  }
+
+	  else{
+		  $(".navbar").css("background" , "#E7272D");  	
+	  }
+  })
+})
+</script>
+<!------------------------------------------------------------START OF THE SECOND SECTION------------------------------------------------------------ -->
+<div class="container">
+
+	<div class = "mx-auto m-5 pb-3" style="width:150px;"> Specials Combo </br> Our Best Sellers</br></div>
+	<!--<h1 class = "center">Specials Combo </br> Our Best Sellers</br></h1>-->
+</div>    
+<!-- Creating a deck of card layouts -->	
+<div class="container">
+	<div class="card-deck">
+	<!--deck 1 -->
+	<div class="card border">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\thai.png" alt="thaipizza">
+			<p class="card-text">Thai Combo</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$12</p>
+		</div>
+	</div>
+	<!--deck 2 -->
+	<div class="card border">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\mozarella.png" alt="mozarella">
+			<p class="card-text">Mozarella Pizza</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$14</p>
+		</div>
+	</div>
+	<!--deck 3 -->
+	<div class="card border">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\thai.png" alt="thaipizza">
+			<p class="card-text">Thai Combo</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$12</p>
+		</div>
+	</div>
+	<!--deck 4 -->
+	<div class="card border">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\mozarella.png" alt="mozarella">
+			<p class="card-text">Mozarella Pizza</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$14</p>
+		</div>
+	</div>
+	
+	</div>
+		
+</div>
+
+<!------------------------------------------------------------------------- Implementing Parallax ------------------------------------------------------------------------->
+
+<div id="parallax">
+	<h1 class = "container pt-5 text-white"> BUY 2 GET 1 </br> FREE PIZZA! </br></h1>
+	
+</div>
+
+<div class="container">
+	<div class = "row">
+		<div class = "col">
+			<h3> Welcome</h3></br>
+			<h1><strong>WE MAKE THE</strong></h1></br>
+			<h1><strong>BEST PIZZA</strong></h1></br>
+			<h1><strong>IN TOWN</strong></h1></br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula.</p></br>
+			<p>Suspendisse eu lorem vitae odio eleifend imperdiet. Duis in efficitur sem, at lobortis nulla. In nec velit sollicitudin, mollis tortor semper, ultrices mi.</>
+		</div>
+		<div class = "col-2 mb-0 pb-0">
+			<div class = "row my-5 ml-4">
+				<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:100px;"></br>
+				<p>some text</p></br>
+				<p>some text</p></br>
+			</div>
+			<div class = "row my-5 ml-4">
+				<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:100px;"></br>
+				<p>some text</p></br>
+				<p>some text</p></br>
+			</div>
+			<div class = "row my-5 ml-4">
+				<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:100px;"></br>
+				<p>some text</p></br>
+				<p>some text</p></br>
+			</div>
+		</div>
+		<div class = "col">
+		<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:450px;">
+		</div>
+	</div>	
+</div>
+
+
+<!--- Section 4 -->
+<div id = "fourthsection" style="background-color: #0e0e0e;">
+<div class="container">
+	<div class="text-center" style="color:#ffffff;">
+		<h2>Ingredient<h2>
+		<h1>Сooked with natural</h1> 
+		<h1>ingredient</h1>
+	</div>
+	
+	<div class = "row">
+		<div class = "col">
+		Fresh Vegetables
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus.
+
+Lettuce Leaf
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus.
+
+Glow Cheese
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus.
+		</div>
+		<div class = "col">
+		<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:350px;">
+		</div>
+		<div class = "col">
+		Mild Butter
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus.
+
+Sleek Onion
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus.
+
+Slices Beef
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus.
+		</div>
+	</div>	
+</div>
+</div>
+
+<!--------------------------------------------------------------------------Menu Section------------------------------------------------------------------------------------->
+
+<div class= "container">
+	<div class="text-center">
+		<p>Menu</p>
+		<h1>Choose your dish</h1>
+	</div>
+	
+	<div class = "row">
+	<!---Column 1-->
+		<div class = "col">
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+			
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+			
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+			
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+		</div>
+		
+		<!---Column 2-->
+		<div class = "col">
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+			
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+			
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+			
+			<div class = "row">
+				<span class="badge badge-danger">Sushi</span>
+				<h3>Salmon Pizza . . . . . . . . . . . . . . . $18</h3>
+				<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget lectus porta euismod a libero.</p>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+<!--------------------------------------------------------------------------Next Section------------------------------------------------------------------------------------->
+<div id=<div class="container">
+	<div class="text-center" style="color:#000000;">
+		<h3>DEALS<h2>
+		<h1>Choose your dishes</h1> 
+	</div>
+	
+	<div class="card-deck" style="color:#FFFFFF;">
+	<!--deck 1 -->
+	<div class="card border">
+		<div class="card-body text-center " style="background-color: #FF3131;">
+			<div class = "row">
+				<div class = "col">
+						<h4>Fresh Pizza</h4>
+						<h4>Vegan Set</h4>
+						<h4>Order now</h4>
+				</div>
+				
+				<div class = "col">
+					<img src="C:\Users\manju\Downloads\learning html\Bootstrap\thai.png" alt="logo" style="width:150px;">	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--deck 2 -->
+	<div class="card border">
+		<div class="card-body text-center" style="background-color: #000000;">
+			<div class = "row">
+				<div class = "col">
+						<h4>Pizza</h4>
+						<h4>Mozarella</h4>
+						<h4>Order now</h4>
+				</div>
+				
+				<div class = "col">
+					<img src="C:\Users\manju\Downloads\learning html\Bootstrap\05.png" alt="logo" style="width:150px;">	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card border">
+		<div class="card-body text-center" style="background-color: #FFC300;">
+			<div class = "row">
+				<div class = "col">
+						<h4>Burger</h4>
+						<h4>Beef Steak</h4>
+						<h4>Order now</h4>
+				</div>
+				
+				<div class = "col">
+					<img src="C:\Users\manju\Downloads\learning html\Bootstrap\01.png" alt="logo" style="width:150px;">	
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	
+</div>
+
+<!--------------------------------------------------------------------------Parallax 2------------------------------------------------------------------------------------->
+<div id="parallaxtwo">
+	<h1 style="color:white">add button here</h1>
+	
+</div>
+
+<!--------------------------------------------------------------------------Carousel------------------------------------------------------------------------------------->
+
+
+<div class="container" style="background-color:black">
+	<div class="text-center" style="color:#FFFFFF;">
+		<h3>Reward<h2>
+		<h1>Clients review</h1> 
+	</div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+		<div class = "row">
+				<div class = "col">
+					<img src="C:\Users\manju\Downloads\learning html\Bootstrap\thai.png" alt="Los Angeles" width="300" height="500">	
+				</div>
+				
+				<div class = "col">
+					<p> Some text</p>
+				</div>
+			</div>
+      
+    </div>
+    <div class="carousel-item">
+      <div class = "row">
+				<div class = "col">
+					<img src="C:\Users\manju\Downloads\learning html\Bootstrap\thai.png" alt="Los Angeles" width="300" height="500">	
+				</div>
+				
+				<div class = "col">
+					<p> Some text</p>
+				</div>
+			</div>
+    </div>
+    <div class="carousel-item">
+      <div class = "row">
+				<div class = "col">
+					<img src="C:\Users\manju\Downloads\learning html\Bootstrap\thai.png" alt="Los Angeles" width="300" height="500">	
+				</div>
+				
+				<div class = "col">
+					<p> Some text</p>
+				</div>
+			</div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+
+<!--------------------------------------------------------------------------Behind the taste------------------------------------------------------------------------------------->
+<div style="background-color:#e7272d">
+<div class= "container">
+	<div class="text-center" style="color:#000000;">
+		<h3>team<h2>
+		<h1>Behind the taste</h1> 
+	</div>
+	
+	<div class="card-deck">
+	<!--deck 1 -->
+	<div class="card border" style="background-color:#fff4e2">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\face1.jpg" alt="thaipizza">
+			<p class="card-text">Thai Combo</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$12</p>
+		</div>
+	</div>
+	<!--deck 2 -->
+	<div class="card border" style="background-color:#fff4e2">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\face2.jpg" alt="mozarella">
+			<p class="card-text">Mozarella Pizza</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$14</p>
+		</div>
+	</div>
+	<!--deck 3 -->
+	<div class="card border" style="background-color:#fff4e2">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\face3.jpg" alt="thaipizza">
+			<p class="card-text">Thai Combo</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$12</p>
+		</div>
+	</div>
+	<!--deck 4 -->
+	<div class="card border" style="background-color:#fff4e2">
+		<div class="card-body text-center">
+			<img class="card-img-top" src="C:\Users\manju\Downloads\learning html\Bootstrap\face4.jpg" alt="mozarella">
+			<p class="card-text">Mozarella Pizza</p>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="card-text">$14</p>
+		</div>
+	</div>
+	
+	</div>
+</div>
+</div>
+<!--------------------------------------------------------------------------Contact us------------------------------------------------------------------------------------->
+<div class="container">
+	<div class = "row">
+		<div class = "col" style="box-sizing: border-box;">
+			<!-- Contact us section-->	
+				<form action=3>
+					<label for="fname">Ask a Question</label>
+					<input type="text" id="fname" name="firstname" placeholder="Name">
+
+					<input type="text" id="email" name="mail" placeholder="Email">
+    
+					<input type="text" id="number" name="pnumber" placeholder="Phone Number">
+
+					<textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+
+					<input type="submit" value="SEND MESSAGE">
+					</form>
+			
+		</div>
+				
+		<div class = "col">
+			<div class="google-map"><iframe frameborder="0" style="border:0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEIpgj38KyLFELm2bK9Y7krBkz1K-cMq8&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen="" width="600" height="600"></iframe></div>     
+		</div>
+	</div>
+
+</div>
+
+<!--------------------------------------------------------------------------download the app section-------------------------------------------------------------------------------->
+<div class = "container">
+	<div class = "row">
+		<div class = "col" style="box-sizing: border-box;">
+			<!-- download app text section-->	
+			<h3>download app</h3>
+			<h1>Download the app.</br> Click order and enjoy.</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula in, aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum quam mattis.</p>
+		</div>
+				
+		<div class = "col">
+			 <img src="04.png" alt="downloadpic" style="width:500px; height:600px">    
+		</div>
+	</div>
+</div>
+
+<!--------------------------------------------------------------------------Last section-------------------------------------------------------------------------------->
+
+<div style="background-color:#232323;">
+	<div class="container">	
+		<span class="pr-5" style="color:white">___________________________________________________________</span><img src="logo2.png" alt="logo" style="width:150px"><span class="pl-5" style="color:white">_____________________________________________________________</span>
+		<div class = "row">
+			<div class = "col" style="color:#FFFFFF;">
+				
+				<p> some text</p>
+			</div>
+				
+			<div class = "col" style="color:#FFFFFF;">
+					
+				<p> some text</p>
+			</div>
+			
+			<div class = "col" style="color:#FFFFFF;">
+					
+				<p> some text</p>
+			</div>
+			
+			<div class = "col" style="color:#FFFFFF;">
+					
+				<p> some text</p>
+			</div>
+			
+		</div>	
+		
+		<span class="text-center" style="color:white">_______________________________________________________________________________________________________________________________________________________________</span>
+	</div>
+</div>
+<script src = "main.js"></script>
+</body>
+</html>

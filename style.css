@@ -1,0 +1,75 @@
+#navbarDropdown {
+            color: #ffffff;
+        }
+#parallax{
+	display:flex;
+	font-family:roboto;
+	font-weight:bold;
+	width:100%;
+	height:70vh;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(parallaxbackground.jfif);
+	background-size:cover;
+	/*background-attachment:fixed;*/
+	
+	}
+	
+#parallaxtwo{
+	display:flex;
+	font-family:roboto;
+	font-weight:bold;
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(parallaxbackground.jfif);
+	background-size:cover;
+	/*background-attachment:fixed;*/
+	
+	}
+	
+/*form Styling*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height:50px;
+}
+
+input[type=submit] {
+  background-color: #89b758;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  height:60px;
+  width:200px;
+  font-weight:bold;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+#logotext{
+    font-family: 'Permanent Marker';
+	font-size: 22px;
+	font-weight:bold;
+}
+
+#buynow{
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  height:50px;
+  width:130px;
+  font-weight:bold;
+	
+}
+		
